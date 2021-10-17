@@ -37,4 +37,9 @@ class StringCalculatorShould {
    public void multipleDelimiterReturnSum() throws Exception {
 	   	assertEquals(stringCalculator.add("1;2"),3);
 	   }
+   
+   @Test(expectedExceptions=Exception.class )
+   public void  negativeInputReturnsException() throws Exception {
+   	stringCalculator.add("-1");
+   }
 }
