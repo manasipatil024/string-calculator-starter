@@ -46,4 +46,9 @@ class StringCalculatorShould {
    public void ignoreNumbersGreaterThan1000() throws Exception {
 	   	assertEquals(stringCalculator.add("10,10,1001"),20);
 	   }
+   
+   
+   public void sumsThreeNumbersEachMultiplyByThree() {
+	   assertThat(StringCalculator.sum("3*1+3*4+3*2"), is(21));
+   }
 }

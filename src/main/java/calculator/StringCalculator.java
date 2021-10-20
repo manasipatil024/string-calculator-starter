@@ -46,4 +46,12 @@ class StringCalculator {
     private int stringToInt(String input) {
     	 return Integer.parseInt(input);
     }
+    
+    private int getsum (String input) {
+    	if(input.startsWith("M")) {
+    		String[] Numbers=input.split(delimiter);
+    		return getsum(null);
+    	}
+		return sum;
+    }
 }
